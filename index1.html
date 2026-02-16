@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kamu yang Lagi Sakit</title>
+
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<!-- HALAMAN 1 -->
+<div class="page show" id="page1">
+    <h1>Hai Sayangggkuu cintakuuuu 🤍</h1>
+    <p>Apa kabarnya hari ini?</p>
+    <p>Semoga cepat membaik ya.</p>
+    <button onclick="nextPage(2)">Lanjut ➜</button>
+</div>
+
+<!-- HALAMAN 2 -->
+<div class="page hidden" id="page2">
+    <h2>Pesan Untuk Kamu</h2>
+    <p class="longtext" id="typedText"></p>
+    <button onclick="nextPage(3)">Halaman Terakhir ➜</button>
+</div>
+
+<!-- HALAMAN 3 -->
+<div class="page hidden" id="page3">
+    <h2>Pelukan Jarak Jauh 🤍</h2>
+
+    <img src="peluk.gif" class="hug-gif" alt="Pelukan">
+
+    <p>Semoga cepat sembuh ya sayanggkuuuu.</p>
+
+    <button onclick="nextPage(1)">Kembali ke Awal ↺</button>
+</div>
+
+
+<script src="kode.js"></script>
+
+</body>
+</html>

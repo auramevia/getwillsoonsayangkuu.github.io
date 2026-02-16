@@ -1,0 +1,122 @@
+body{
+    margin:0;
+    font-family:Segoe UI, sans-serif;
+    text-align:center;
+    color:white;
+    overflow:hidden;
+    background:#000;
+}
+
+/* halaman */
+.page{
+    height:100vh;
+    width:100%;
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    box-sizing:border-box;
+    transition:0.6s;
+    background:#000;
+}
+
+.hidden{ left:100%; }
+.show{ left:0; }
+
+/* tombol */
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:20px;
+    font-size:16px;
+    cursor:pointer;
+    background:white;
+    color:black;
+}
+
+/* teks */
+.longtext{
+    max-width:650px;
+    line-height:1.6;
+}
+
+/* efek ketik */
+#typedText::after{
+    content:"|";
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{opacity:0;}
+}
+
+/* LOVE JATUH */
+.heart{
+    position:absolute;
+    color:white;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-10vh);
+        opacity:1;
+    }
+    to{
+        transform:translateY(110vh);
+        opacity:0;
+    }
+}
+
+/* HALAMAN 3 PELUKAN */
+.hug-gif{
+    width:220px;
+    max-width:80%;
+    margin:20px 0;
+    animation:fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:scale(0.9);}
+    to{opacity:1; transform:scale(1);}
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media (max-width: 600px){
+
+    h1{
+        font-size:24px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    p{
+        font-size:14px;
+    }
+
+    button{
+        font-size:14px;
+        padding:10px 18px;
+    }
+
+    .page{
+        padding:15px;
+    }
+
+    .longtext{
+        max-width:650px;
+        line-height:1.5;
+    }
+
+    .hug-gif{
+        width:180px;
+    }
+}
+
